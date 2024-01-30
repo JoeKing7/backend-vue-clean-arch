@@ -4,7 +4,7 @@ import { CreateLoginDto } from './dto/create-login.dto';
 import { UpdateLoginDto } from './dto/update-login.dto';
 import { SigninDto } from './dto/signin.dto';
 
-@Controller('login')
+@Controller('auth')
 export class LoginController {
   constructor(private readonly loginService: LoginService) { }
 
@@ -13,7 +13,7 @@ export class LoginController {
     return this.loginService.create(createLoginDto);
   }
 
-  @Post('signin')
+  @Post('login')
   signin(@Body() signinDto: SigninDto) {
     return this.loginService.signin(signinDto);
   }

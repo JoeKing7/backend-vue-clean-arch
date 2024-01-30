@@ -74,15 +74,15 @@ export class LoginService {
               "permission": "auth:basic",
               "children": [
                 {
-                  "title": "Menu1.1",
+                  "title": "Menu1a",
                   "icon": "icon",
-                  "route": "menu1.1",
+                  "route": "menu-a",
                   "permission": "auth:basic"
                 },
                 {
-                  "title": "Menu1.2",
+                  "title": "Menu1b",
                   "icon": "icon",
-                  "route": "menu1.2",
+                  "route": "menu-b",
                   "permission": "auth:basic"
                 }
               ]
@@ -94,15 +94,15 @@ export class LoginService {
               "permission": "auth:basic",
               "children": [
                 {
-                  "title": "Menu2.1",
+                  "title": "Menu2a",
                   "icon": "icon",
-                  "route": "menu2.1",
+                  "route": "menu2-a",
                   "permission": "auth:basic"
                 },
                 {
-                  "title": "Menu2.2",
+                  "title": "Menu2b",
                   "icon": "icon",
-                  "route": "menu2.2",
+                  "route": "menu2-b",
                   "permission": "auth:basic"
                 }
               ]
