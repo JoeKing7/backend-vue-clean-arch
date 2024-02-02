@@ -14,7 +14,7 @@ export class LoginService {
 
     const { username, password } = signinDto;
 
-    if (username == 'admin@demo.com' && password == 'admin') {
+    if (username == 'superadmin' && password == '123456') {
       return {
         "user": {
           "username": "superadmin",
@@ -59,6 +59,86 @@ export class LoginService {
             "user:store",
             "user:update",
             "user:delete"
+          ],
+          "menu": [
+            {
+              "title": "Home",
+              "icon": "icon",
+              "route": "home",
+              "permission": "auth:basic"
+            },
+            {
+              "title": "Menu1",
+              "icon": "icon",
+              "route": "menu1",
+              "permission": "auth:basic",
+              "children": [
+                {
+                  "title": "Menu1a",
+                  "icon": "icon",
+                  "route": "menu-a",
+                  "permission": "auth:basic"
+                },
+                {
+                  "title": "Menu1b",
+                  "icon": "icon",
+                  "route": "menu-b",
+                  "permission": "auth:basic"
+                }
+              ]
+            },
+            {
+              "title": "Menu2",
+              "icon": "icon",
+              "route": "menu2",
+              "permission": "auth:basic",
+              "children": [
+                {
+                  "title": "Menu2a",
+                  "icon": "icon",
+                  "route": "menu2-a",
+                  "permission": "auth:basic"
+                },
+                {
+                  "title": "Menu2b",
+                  "icon": "icon",
+                  "route": "menu2-b",
+                  "permission": "auth:basic"
+                }
+              ]
+            }
+          ]
+        },
+        "accessToken": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoicm9vdCIsImVtdWxhdGVkSWQiOi0xLCJ1c2VySWQiOjEsInN1YiI6InN1cGVyYWRtaW4iLCJpYXQiOjE3MDYzMDk4MDgsImV4cCI6MTcwNjMxMzQwOH0.0paxSa8218LPqA88Q5PjtID9jMIixWJ6C3t4a73qAR_NpNvRPmaN8M_G5p9U2y5PRno77WD-LWeog5iOiEn8fQ",
+        "refreshToken": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoicm9vdCIsImVtdWxhdGVkSWQiOi0xLCJ1c2VySWQiOjEsInN1YiI6InN1cGVyYWRtaW4iLCJpYXQiOjE3MDYzMDk4MDgsImV4cCI6MTcwNjMxNDAwOH0.HAyEr9so68HuejosCvBY6LxwaAjE2H4zUkkFxUOhGrF7K7o3T9n0Eb9XnH8XW3yaSM9rnrC5WYZ09Gh7_K8PkA",
+        "emulatedId": -1,
+        "idleTime": 300
+      }
+    }
+
+    if (username == 'seed' && password == '123456') {
+      return {
+        "user": {
+          "username": "user",
+          "changePassword": false,
+          "singleSession": true,
+          "active": true,
+          "firstname": "User",
+          "firstsurname": "System",
+          "dni": "123456789",
+          "dniexpdate": "2010-01-01",
+          "birthdate": "2010-01-01",
+          "email": "tpsuser@mailinator.com",
+          "celularphone": "3009090808",
+          "localphone": "6013120987",
+          "role": {
+            "id": 1,
+            "code": "user",
+            "name": "User",
+            "description": "Usuario user"
+          },
+          "permissions": [
+            "auth:basic",
           ],
           "menu": [
             {
