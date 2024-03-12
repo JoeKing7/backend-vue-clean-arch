@@ -1,4 +1,5 @@
 export class SigninDto {
-    username: string;
-    password: string;
+  identificationType: string;
+  identificationNumber: string;
+  expeditionDate: string;
 }
