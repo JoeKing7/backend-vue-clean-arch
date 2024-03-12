@@ -34,9 +34,9 @@ export class LoginService {
           localphone: '6013120987',
           role: {
             id: 1,
-            code: 'root',
-            name: 'Root',
-            description: 'Usuario Root',
+            code: 'uwe',
+            name: 'Uwe',
+            description: 'Usuario Web Exterior',
           },
           permissions: [
             'auth:basic',
@@ -69,46 +69,6 @@ export class LoginService {
               icon: 'icon',
               route: 'home',
               permission: 'auth:basic',
-            },
-            {
-              title: 'Menu1',
-              icon: 'icon',
-              route: 'menu1',
-              permission: 'auth:basic',
-              children: [
-                {
-                  title: 'Menu1a',
-                  icon: 'icon',
-                  route: 'menu-a',
-                  permission: 'auth:basic',
-                },
-                {
-                  title: 'Menu1b',
-                  icon: 'icon',
-                  route: 'menu-b',
-                  permission: 'auth:basic',
-                },
-              ],
-            },
-            {
-              title: 'Menu2',
-              icon: 'icon',
-              route: 'menu2',
-              permission: 'auth:basic',
-              children: [
-                {
-                  title: 'Menu2a',
-                  icon: 'icon',
-                  route: 'menu2-a',
-                  permission: 'auth:basic',
-                },
-                {
-                  title: 'Menu2b',
-                  icon: 'icon',
-                  route: 'menu2-b',
-                  permission: 'auth:basic',
-                },
-              ],
             },
           ],
         },
